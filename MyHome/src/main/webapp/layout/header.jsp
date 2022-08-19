@@ -16,13 +16,14 @@
 				<c:when test="${login != null }">
 					<a href="/MyHome/member/myPage.jsp">MyPage</a> | 
 					<a href="/MyHome/login/logout.do">Logout</a> | 
+					<a href="/MyHome/login/main.board">Board</a> 
 				</c:when>
 				<c:otherwise>
 					<a href="/MyHome/login/login.do">Login</a> | 
 					<a href="/MyHome/member/joinForm.jsp">Join</a> | 
 				</c:otherwise>
 			</c:choose>
-			Board | 
+			  
 			<a href="/MyHome/">Home</a>
 		</div>
 		<div class="main">

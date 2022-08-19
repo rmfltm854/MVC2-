@@ -10,4 +10,15 @@
 			maxActive="20"
 			maxIdle="3"
 			maxWait="-1"/>
+			
+	<Resource name="jdbc/board"
+			auth = "Container"
+			type = "javax.sql.DataSource"
+			driverClassName = "com.mysql.cj.jdbc.Driver"	
+			url = "jdbc:mysql://localhost:3306/board"
+			username = "spring"
+			password = "spring"
+			maxActive="20"
+			maxIdle="3"
+			maxWait="-1"/>
 </Context>
