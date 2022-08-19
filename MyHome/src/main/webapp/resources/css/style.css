@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+	.header , .footer {
+		border: 1px black solid;
+		width: 600px;
+		height: 40px;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 12px;
+	}
+	
+	.main{
+		width: 600px;
+		min-height: 400px;
+		padding-top: 15px;
+	}
+	
+	a{
+		text-decoration: none;
+	}
+	
+	table,tr,td,th{
+		border-spacing: 0px;
+		border: 1px black solid;
+	}
+	
+	.ckid{
+		float: left;
+	}
+	
+	.ckid_text{
+		font-size: 10px;
+	}
+	
+	a:link {
+		text-decoration: none;
+		color: black;
+	}
+	
+	a:visited {
+		text-decoration: none;
+		color: black;
+	}
+	
+	a:hover {
+		color: lightgreen;
+	}
