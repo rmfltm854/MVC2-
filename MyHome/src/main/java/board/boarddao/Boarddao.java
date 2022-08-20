@@ -90,5 +90,29 @@ public class Boarddao {
 		}
 		return list;
 	}
+	
+	public Boarddto showBoard(int bnum) {
+		String sql = "select * from post where bnum = ?";
+		Boarddto dto = new Boarddto();
+		
+		try {
+			conn = ds.getConnection();
+			pstmt  = conn.prepareStatement(sql);
+			pstmt.setInt(1, bnum);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				dto.setBnum(rs.getInt(1));
+				dto.setBwriter(rs.getString(2));
+				dto.setBdate(rs.getDate(3));
+				dto.setBsubject(rs.getString(4));
+				dto.setBcontent(rs.getString(5));
+				dto.setBid(rs.getString(6));
+			}
+		
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return dto;
+	}
 
 }

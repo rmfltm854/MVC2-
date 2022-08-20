@@ -31,7 +31,7 @@ th태그(table header)는 첫 번쨰 로우에 사용해 컬럼만 강조합니�
 	<c:forEach var="board" items="${boardList }">
 		<tr>
 			<td>${board.bnum }</td>
-			<td><a href="http://localhost:8181/JDBC_t/BoardDetail?bnum=${board.bnum }">
+			<td><a href="/MyHome/board/show.board">
 				${board.bsubject }</a>
 			</td>
 			<td>${board.bwriter }</td>

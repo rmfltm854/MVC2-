@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import board.action.CreateAction;
 import board.action.EditAction;
 import board.action.MainAction;
+import board.action.ShowAction;
 import join.action.DeleteAction;
 import join.action.JoinAction;
 import join.action.UpdateAction;
@@ -61,6 +62,18 @@ public class BController extends HttpServlet {
 		case "createform" :
 			actionForward = new ActionForward("/Board/CreateBoard.jsp",false);
 			break;
+		
+		case "delete" :
+			action  = new DeleteAction();
+			actionForward = new ActionForward("/Board/Main.jsp",false);
+			break;
+		
+		case "show" :
+			action = new ShowAction();
+			actionForward = new ActionForward("/Board/Main.jsp",false);
+			break;
+		
+			
 		
 			
 		}
